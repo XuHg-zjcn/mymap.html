@@ -1,3 +1,6 @@
+//Copyright (C) 2025 Xu Ruijun
+//File: "mymap.js"
+//License: MIT License
 if(typeof tile_url === 'undefined'){
     var tile_url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 }
