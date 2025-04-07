@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="leaflet/leaflet.css" />
     <script src="leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="Leaflet.draw/dist/leaflet.draw.css"/>
+    <script src="Leaflet.draw/dist/leaflet.draw-custom.js"></script>
+    <link rel="stylesheet" href="Leaflet.MeasureControl/leaflet.measurecontrol.css" />
+    <script src="Leaflet.MeasureControl/leaflet.measurecontrol.js"></script>
 </head>
 <body style="height:100%;margin:0;padding:0;">
 <div id="map" style="height:100%"></div>
@@ -16,6 +20,8 @@ L.tileLayer('http://127.0.0.1/hot/{z}/{x}/{y}.png', {
     maxZoom: 19,
     maxNativeZoom: 19
 }).addTo(map);
+
+L.Control.measureControl().addTo(map);
 </script>
 </body>
 </html>

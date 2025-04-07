@@ -1,2 +1,3 @@
 leaflet/
-leaflet.zip
+*.zip
+*.tar*
