@@ -26,6 +26,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 L.Control.measureControl().addTo(map);
+
+L.control.scale({
+    position:"bottomleft",
+    maxWidth:100,
+    metric:true,
+    imperial:false
+}).addTo(map);
 </script>
 </body>
 </html>
